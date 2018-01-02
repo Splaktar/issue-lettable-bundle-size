@@ -12,6 +12,6 @@ import { map } from 'rxjs/operators'
 export class AppComponent {
   title = 'app';
   constructor(){
-    //of(true).pipe(map(_ => false)).subscribe(console.log);
+    of(true).pipe(map(_ => false)).subscribe(console.log);
   }
 }
