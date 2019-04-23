@@ -10,7 +10,6 @@ import { map } from 'rxjs/operators'
   styles: []
 })
 export class AppComponent {
-  title = 'app';
   constructor(){
     of(true).pipe(map(_ => false)).subscribe(console.log);
   }
